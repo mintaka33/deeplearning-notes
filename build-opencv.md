@@ -103,7 +103,10 @@ python
 # Reference
 
 https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
+
 https://www.pyimagesearch.com/2017/08/21/deep-learning-with-opencv/
+
 https://www.pyimagesearch.com/2017/09/11/object-detection-with-deep-learning-and-opencv/
+
 
 
