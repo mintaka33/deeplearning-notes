@@ -17,7 +17,7 @@ ap.add_argument("-p", "--prototxt", required=True,
 	help="path to Caffe 'deploy' prototxt file")
 ap.add_argument("-m", "--model", required=True,
 	help="path to Caffe pre-trained model")
-ap.add_argument("-c", "--confidence", type=float, default=0.2,
+ap.add_argument("-c", "--confidence", type=float, default=0.8,
 	help="minimum probability to filter weak detections")
 args = vars(ap.parse_args())
 
@@ -36,7 +36,7 @@ net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 # initialize the video stream, allow the cammera sensor to warmup,
 # and initialize the FPS counter
 print("[INFO] starting video stream...")
-vs = FileVideoStream('test.mp4').start()
+vs = FileVideoStream('test4.264').start()
 time.sleep(2.0)
 fps = FPS().start()
 
@@ -92,6 +92,8 @@ while True:
 
 	# update the FPS counter
 	fps.update()
+
+	time.sleep(0.1)
 
 # stop the timer and display FPS information
 fps.stop()
