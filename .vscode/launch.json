@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Terminal (integrated)",
+            "name": "Image",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/object_detection_mobilenet_ssd/opencv_mobilenet_ssd.py",
@@ -17,6 +17,20 @@
                 "${workspaceFolder}/object_detection_mobilenet_ssd/MobileNetSSD_deploy.caffemodel", 
                 "--image", 
                 "${workspaceFolder}/object_detection_mobilenet_ssd/bike.jpg"
+            ],
+        },
+
+        {
+            "name": "Video",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/real_time_object_detection/real_time_object_detection.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--prototxt", 
+                "${workspaceFolder}/real_time_object_detection/MobileNetSSD_deploy.prototxt.txt", 
+                "--model", 
+                "${workspaceFolder}/real_time_object_detection/MobileNetSSD_deploy.caffemodel"
             ],
         },
     ]
