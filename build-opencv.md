@@ -108,5 +108,8 @@ https://www.pyimagesearch.com/2017/08/21/deep-learning-with-opencv/
 
 https://www.pyimagesearch.com/2017/09/11/object-detection-with-deep-learning-and-opencv/
 
+https://www.pyimagesearch.com/2017/09/18/real-time-object-detection-with-deep-learning-and-opencv/
+
+
 
 
