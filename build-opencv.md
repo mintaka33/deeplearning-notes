@@ -30,6 +30,8 @@ If build single OpenCV DLL, use this cmake configure parameter
 cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DINSTALL_CREATE_DISTRIB=ON ..\sources
 ```
 
+**Note**: If want to build install package, build the **INSTALL** project in Visual Studio
+
 ## Step3: build project
 
 open the **OpenCV.sln** with Visual Studio in build32 or build64 folder and run build solution in VS
