@@ -25,6 +25,11 @@ cd build64
 cmake -DCMAKE_GENERATOR_PLATFORM=x64 ..\sources
 ```
 
+If build single OpenCV DLL, use this cmake configure parameter
+```dos
+cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DINSTALL_CREATE_DISTRIB=ON ..\sources
+```
+
 ## Step3: build project
 
 open the **OpenCV.sln** with Visual Studio in build32 or build64 folder and run build solution in VS
