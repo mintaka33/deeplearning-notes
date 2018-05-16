@@ -30,6 +30,11 @@ If build single OpenCV DLL, use this cmake configure parameter
 cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DINSTALL_CREATE_DISTRIB=ON ..\sources
 ```
 
+Build OpenCV with ffmpeg (for loading/processing video/image file)
+```dos
+cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DINSTALL_CREATE_DISTRIB=ON -DWITH_FFMPEG=ON ..\sources
+```
+
 **Note**: If want to build install package, build the **INSTALL** project in Visual Studio
 
 ## Step3: build project
