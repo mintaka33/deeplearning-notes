@@ -34,6 +34,13 @@ Build OpenCV with ffmpeg (for loading/processing video/image file)
 ```dos
 cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DINSTALL_CREATE_DISTRIB=ON -DWITH_FFMPEG=ON ..\sources
 ```
+If application needs statically link with OpenCV library, we can set **-DBUILD_SHARED_LIBS=OFF** to OpenCV static library.
+**Note: When use OpenCV static library, we cannot use dynamic ffmpeg DLL at the same time. If have to use ffmpeg, we have to build ffmpeg static library by ourseves (OpenCV doesn't support static ffmepg library due to LGPL license problem)**
+
+```dos
+cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DINSTALL_CREATE_DISTRIB=ON -DWITH_FFMPEG=ON -DBUILD_SHARED_LIBS=OFF ..\sources
+```
+
 
 **Note**: If want to build install package, build the **INSTALL** project in Visual Studio
 
